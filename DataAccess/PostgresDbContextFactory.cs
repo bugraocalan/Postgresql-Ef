@@ -14,7 +14,6 @@ namespace DataAccess
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
             .AddJsonFile("appsettings.json", false)
-            .
             .Build();
 
             var connectionStr = configuration.GetConnectionString("Users");
