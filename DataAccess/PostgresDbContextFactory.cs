@@ -13,7 +13,7 @@ namespace DataAccess
         public PostgresDbContext CreateDbContext(string[] args)
         {
             IConfigurationRoot configuration = new ConfigurationBuilder()
-            .AddJsonFile("appsettings.json", false)
+            .AddJsonFile("secret.json", false)
             .Build();
 
             var connectionStr = configuration.GetConnectionString("Users");
